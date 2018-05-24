@@ -1,0 +1,6773 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta content="20664a101c66a97ca28bde13b76e1ac3" name="X-Csrf-Token">
+   <meta content="width=device-width, initial-scale=0.01" id="viewport" name="viewport"/>
+   <script src="http://st.codeforces.com/s/74817/js/jquery-1.8.3.js" type="text/javascript">
+   </script>
+   <script type="application/javascript">
+    window.standaloneContest = false;
+        function adjustViewport() {
+            var screenWidthPx = Math.min($(window).width(), window.screen.width);
+            var siteWidthPx = 1100; // min width of site
+            var ratio = Math.min(screenWidthPx / siteWidthPx, 1.0);
+            var viewport = "width=device-width, initial-scale=" + ratio;
+            $('#viewport').attr('content', viewport);
+            var style = $('<style>html * { max-height: 1000000px; }</style>');
+            $('html > head').append(style);
+        }
+
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            adjustViewport();
+        }
+   </script>
+   <meta content="no-cache" http-equiv="pragma"/>
+   <meta content="-1" http-equiv="expires"/>
+   <meta content="d2" http-equiv="profileName"/>
+   <meta content="OTd2dN5x4nS4OPknPI9JFg36fKxjqY0i1PSfFPv_J90" name="google-site-verification">
+    <meta content="100001352546622" property="fb:admins">
+     <meta content="http://st.codeforces.com/s/74817/images/codeforces-telegram-square.png" property="og:image">
+      <link href="http://st.codeforces.com/s/74817/images/codeforces-telegram-square.png" rel="image_src"/>
+      <meta content="Submission #38195821 - Codeforces" property="og:title"/>
+      <meta content="" property="og:description"/>
+      <meta content="Codeforces" property="og:site_name"/>
+      <meta content="343702cafbf16e2078516a925a7feb09efe5ff0e" name="gc"/>
+      <meta content="+03:00" name="utc_offset"/>
+      <meta content="f56f99fd7e087fb6ccb48ef2" name="verify-reformal"/>
+      <title>
+       Submission #38195821 - Codeforces
+      </title>
+      <meta content="Codeforces. Programming competitions and contests, programming community" name="description"/>
+      <meta content="programming algorithm contest competition informatics olympiads c++ java graphs vkcup" name="keywords"/>
+      <meta content="index, follow" name="robots"/>
+      <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+      <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"/>
+      <link href="//fonts.googleapis.com/css?family=Cuprum&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"/>
+      <link href="http://st.codeforces.com/s/74817/favicon.png" rel="shortcut icon" type="image/png"/>
+      <!--CombineResourcesFilter-->
+      <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/prettify.css" rel="stylesheet" type="text/css">
+       <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/clear.css" rel="stylesheet" type="text/css">
+        <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/style.css" rel="stylesheet" type="text/css">
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/ttypography.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/problem-statement.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/second-level-menu.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/roundbox.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/datatable.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/table-form.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/topic.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/jquery.jgrowl.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/facebox.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/jquery.wysiwyg.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/codeforces.datepick.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/colorbox.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/jquery.drafts.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/status.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/css/community.css" rel="stylesheet" type="text/css"/>
+         <!-- MathJax -->
+         <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+    });
+         </script>
+         <script async="" src="https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+         </script>
+         <!-- /MathJax -->
+         <script src="http://st.codeforces.com/s/74817/js/prettify/prettify.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/moment-with-locales.min.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/pushstream.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/jquery.easing.min.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/jquery.lavalamp.min.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/jquery.jgrowl.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/jquery.swipe.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/facebox.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/jquery.wysiwyg.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/controls/wysiwyg.colorpicker.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/controls/wysiwyg.table.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/controls/wysiwyg.image.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/controls/wysiwyg.link.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/jquery.autocomplete.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/jquery.datepick.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/jquery.ie6blocker.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/jquery.colorbox-min.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/jquery.ba-bbq.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/jquery.drafts.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/sjcl.js" type="text/javascript">
+         </script>
+         <script src="/scripts/bf80645a2e4a465965f5befe7b72da5b/en/codeforces-options.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/js/codeforces.js?v=20160131" type="text/javascript">
+         </script>
+         <!--/CombineResourcesFilter-->
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/markitup/skins/markitup/style.css" rel="stylesheet" type="text/css"/>
+         <link charset="utf-8" href="http://st.codeforces.com/s/74817/markitup/sets/markdown/style.css" rel="stylesheet" type="text/css"/>
+         <script charset="utf-8" src="//yandex.st/share/share.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/markitup/jquery.markitup.js" type="text/javascript">
+         </script>
+         <script src="http://st.codeforces.com/s/74817/markitup/sets/markdown/set.js" type="text/javascript">
+         </script>
+         <!--[if IE]>
+    <style>
+        #sidebar {
+            padding-left: 1em;
+            margin: 1em 1em 1em 0;
+        }
+    </style>
+    <![endif]-->
+        </link>
+       </link>
+      </link>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <span class="csrf-token" data-csrf="20664a101c66a97ca28bde13b76e1ac3" style="display:none;">
+  </span>
+  <div class="button-up" style="display: none; opacity: 0.7; width: 50px; height:100%; position: fixed; left: 0; top: 0; cursor: pointer; text-align: center; line-height: 35px; color: #d3dbe4; font-weight: bold; font-size: 3.0rem;">
+   <i class="icon-circle-arrow-up">
+   </i>
+  </div>
+  <!-- Codeforces JavaScripts. -->
+  <script type="text/javascript">
+   var queryMobile = Codeforces.queryString.mobile;
+    if (queryMobile === "true" || queryMobile === "false") {
+        Codeforces.putToStorage("useMobile", queryMobile == "true");
+    } else {
+        var useMobile = Codeforces.getFromStorage("useMobile");
+        if (useMobile === true || useMobile === false) {
+            if (useMobile != false) {
+                Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", useMobile));
+            }
+        }
+    }
+  </script>
+  <script type="text/javascript">
+   if (window.parent.frames.length > 0) {
+        window.stop();
+    }
+  </script>
+  <script type="text/javascript">
+   window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '554666954583323',
+            xfbml      : true,
+            version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function () {
+    (function () {
+        jQuery.expr[':'].containsCI = function(elem, index, match) {
+            return !match || !match.length || match.length < 4 || !match[3] || (
+                    elem.textContent || elem.innerText || jQuery(elem).text() || ''
+            ).toLowerCase().indexOf(match[3].toLowerCase()) >= 0;
+        }
+    }(jQuery));
+
+    $.ajaxPrefilter(function(options, originalOptions, xhr) {
+        var csrf = Codeforces.getCsrfToken();
+
+        if (csrf) {
+            var data = originalOptions.data;
+            if (originalOptions.data !== undefined) {
+                if (Object.prototype.toString.call(originalOptions.data) === '[object String]') {
+                    data = $.deparam(originalOptions.data);
+                }
+            } else {
+                data = {};
+            }
+            options.data = $.param($.extend(data, { csrf_token: csrf }));
+        }
+    });
+
+    window.getCodeforcesServerTime = function(callback) {
+        $.post("/data/time", {}, callback, "json");
+    }
+
+    window.updateTypography = function () {
+        $("div.ttypography code").addClass("tt");
+        $("div.ttypography pre>code").addClass("prettyprint").removeClass("tt");
+        $("div.ttypography table").addClass("bordertable");
+        prettyPrint();
+    }
+
+    $.ajaxSetup({ scriptCharset: "utf-8" ,contentType: "application/x-www-form-urlencoded; charset=UTF-8", headers: {
+        'X-Csrf-Token': Codeforces.getCsrfToken()
+    }});
+
+    window.updateTypography();
+
+    Codeforces.signForms();
+
+    setTimeout(function() {
+        $(".second-level-menu-list").lavaLamp({
+            fx: "backout",
+            speed: 1000
+        });
+    }, 0);
+
+
+    Codeforces.countdown();
+    $("a[rel='photobox']").colorbox();
+
+
+    function showAnnouncements(json) {
+        //info("j=" + JSON.stringify(json));
+
+        if (json.t != "a") {
+            return;
+        }
+        // console.log("Got announcement from channel");
+        setTimeout(function() {
+            Codeforces.showAnnouncements(json.d, "en");
+        }, Math.random() * 500);
+    }
+    if (Codeforces.getParticipantChannel()) {
+        Codeforces.subscribe(Codeforces.getParticipantChannel(), function(json) {
+            showAnnouncements(json);
+        });
+    }
+
+    if (Codeforces.getContestChannel()) {
+        Codeforces.subscribe(Codeforces.getContestChannel(), function(json) {
+            showAnnouncements(json);
+        });
+    }
+
+    if (Codeforces.getGlobalChannel()) {
+        Codeforces.subscribe(Codeforces.getGlobalChannel(), function(json) {
+            showAnnouncements(json);
+        });
+    }
+
+    if (Codeforces.getUserChannel()) {
+        Codeforces.subscribe(Codeforces.getUserChannel(), function(json) {
+            showAnnouncements(json);
+        });
+    }
+
+    $(".clickable-title").click(function() {
+        Codeforces.alert($(this).attr("title"));
+    }).css("position", "relative").css("bottom", "3px");
+
+
+    Codeforces.reformatTimes();
+    Codeforces.initializePubSub();
+
+    Codeforces.setupContestTimes("/data/contests");
+    Codeforces.setupSpoilers();
+    Codeforces.setupTutorials("/data/problemTutorial");
+        });
+  </script>
+  <script type="text/javascript">
+   var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-743380-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = (document.location.protocol == 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+  <div id="body">
+   <div class="side-bell" style="visibility: hidden; display: none; opacity: 0.7; width: 40px; position: fixed; right: 0; top: 0; cursor: pointer; text-align: center; line-height: 35px; color: #d3dbe4; font-weight: bold; font-size: 1.5rem;">
+    <span class="icon-stack" style="width: 100%;">
+     <i class="icon-circle icon-stack-base">
+     </i>
+     <i class="icon-bell-alt icon-light">
+     </i>
+    </span>
+    <br/>
+    <span class="side-bell__count" style="position: relative; top: -10px;">
+    </span>
+   </div>
+   <div id="header" style="position: relative;">
+    <div style="float:left;">
+     <a href="/">
+      <img src="http://st.codeforces.com/s/74817/images/codeforces-logo-with-telegram.png"/>
+     </a>
+    </div>
+    <div class="lang-chooser">
+     <div style="text-align: right;">
+      <a href="?locale=en">
+       <img alt="In English" src="http://st.codeforces.com/s/74817/images/flags/24/gb.png" title="In English"/>
+      </a>
+      <a href="?locale=ru">
+       <img alt="По-русски" src="http://st.codeforces.com/s/74817/images/flags/24/ru.png" title="По-русски"/>
+      </a>
+     </div>
+     <div>
+      <a href="/enter?back=%2Fproblemset%2Fsubmission%2F978%2F38195821">
+       Enter
+      </a>
+      |
+      <a href="/register">
+       Register
+      </a>
+     </div>
+    </div>
+    <br style="clear: both;"/>
+   </div>
+   <div class="roundbox menu-box" style="">
+    <div class="roundbox-lt">
+    </div>
+    <div class="roundbox-rt">
+    </div>
+    <div class="roundbox-lb">
+    </div>
+    <div class="roundbox-rb">
+    </div>
+    <div class="menu-list-container">
+     <ul class="menu-list main-menu-list">
+      <li class="">
+       <a href="/">
+        Home
+       </a>
+      </li>
+      <li class="">
+       <a href="/contests">
+        Contests
+       </a>
+      </li>
+      <li class="">
+       <a href="/gyms">
+        Gym
+       </a>
+      </li>
+      <li class="current">
+       <a href="/problemset">
+        Problemset
+       </a>
+      </li>
+      <li class="">
+       <a href="/groups">
+        Groups
+       </a>
+      </li>
+      <li class="">
+       <a href="/ratings">
+        Rating
+       </a>
+      </li>
+      <li class="">
+       <a href="/api/help">
+        API
+       </a>
+      </li>
+      <li class="">
+       <a href="/vkcup2018">
+        VK Cup
+        <img class="icon" src="http://st.codeforces.com/images/icons/cup.png"/>
+       </a>
+      </li>
+      <li class="">
+       <a href="/calendar">
+        Calendar
+       </a>
+      </li>
+      <li class="">
+       <a href="/8years">
+        <span style="color:#ce2a2a;position:relative;bottom:3px;font-weight:bold;">
+         8 years!
+        </span>
+        <img src="http://assets.codeforces.com/images/icons/gift-small.png"/>
+       </a>
+      </li>
+     </ul>
+     <form action="/search" method="post">
+      <input name="csrf_token" type="hidden" value="20664a101c66a97ca28bde13b76e1ac3"/>
+      <input class="search" data-isplaceholder="true" name="query" value=""/>
+     </form>
+     <br style="clear: both;"/>
+    </div>
+   </div>
+   <script type="text/javascript">
+    $(document).ready(function () {
+            $("input.search").focus(function () {
+                if ($(this).attr("data-isPlaceholder") === "true") {
+                    $(this).val("");
+                    $(this).removeAttr("data-isPlaceholder");
+                }
+            });
+        });
+   </script>
+   <br style="height: 3em; clear: both;"/>
+   <div style="position: relative;">
+    <div id="pageContent">
+     <div class="second-level-menu">
+      <ul class="second-level-menu-list">
+       <li class="current selectedLava">
+        <a href="/problemset">
+         Main
+        </a>
+       </li>
+       <li>
+        <a href="/problemsets/acmsguru">
+         acmsguru
+        </a>
+       </li>
+      </ul>
+      <span style="position:relative;top:-15px;">
+       |
+      </span>
+      <ul class="second-level-menu-list">
+       <li>
+        <a href="/problemset">
+         Problems
+        </a>
+       </li>
+       <li>
+        <a href="/problemset/submit">
+         Submit
+        </a>
+       </li>
+       <li>
+        <a href="/problemset/status">
+         Status
+        </a>
+       </li>
+       <li>
+        <a href="/problemset/standings">
+         Standings
+        </a>
+       </li>
+       <li>
+        <a href="/problemset/customtest">
+         Custom test
+        </a>
+       </li>
+      </ul>
+     </div>
+     <script src="http://st.codeforces.com/s/74817/js/clipboard.min.js" type="text/javascript">
+     </script>
+     <style>
+      .source-copier {
+            font-size: 1.2rem;
+            float: right;
+            color: #888 !important;
+            cursor: pointer;
+            border: 1px solid rgb(185, 185, 185);
+            padding: 3px;
+            margin: 1px;
+            margin-right: 3px;
+            line-height: 1.1rem;
+            text-transform: none;
+        }
+
+        .source-copier:hover {
+            background-color: #def;
+        }
+     </style>
+     <div class="datatable" style="background-color: #E1E1E1; padding-bottom: 3px;">
+      <div class="lt">
+      </div>
+      <div class="rt">
+      </div>
+      <div class="lb">
+      </div>
+      <div class="rb">
+      </div>
+      <div style="padding: 4px 0 0 6px;font-size:1.4rem;position:relative;">
+       General
+       <div style="position:absolute;right:0.25em;top:0.35em;">
+        <span class="rowCount" style="padding:0;position:relative;bottom:2px;">
+        </span>
+        <img class="closed" src="http://st.codeforces.com/s/74817/images/icons/control.png"/>
+        <span class="filter" style="display:none;">
+         <img class="opened" src="http://st.codeforces.com/s/74817/images/icons/control-270.png"/>
+         <input style="padding:0;position:relative;bottom:2px;border:1px solid #aaa;height:17px;font-size:1.3rem;"/>
+        </span>
+       </div>
+      </div>
+      <div style="background-color: white;margin:0.3em 3px 0 3px;position:relative;">
+       <div class="ilt">
+       </div>
+       <div class="irt">
+       </div>
+       <table class="">
+        <tr>
+         <th style="width:2em;">
+          #
+         </th>
+         <th style="width:12em;">
+          Author
+         </th>
+         <th style="width:2em;">
+          Problem
+         </th>
+         <th style="width:2em;">
+          Lang
+         </th>
+         <th style="width:8em;">
+          Verdict
+         </th>
+         <th style="width:2em;">
+          Time
+         </th>
+         <th style="width:2em;">
+          Memory
+         </th>
+         <th style="width:4em;">
+          Sent
+         </th>
+         <th style="width:4em;">
+          Judged
+         </th>
+         <th style="width:4em;">
+         </th>
+        </tr>
+        <tr>
+         <td>
+          38195821
+         </td>
+         <td>
+          Practice:
+          <br/>
+          <a class="rated-user user-green" href="/profile/vladislav_k" title="Pupil vladislav_k">
+           vladislav_k
+          </a>
+         </td>
+         <td>
+          <a href="/problemset/problem/978/G" title="G - Petya's Exams">
+           978G
+          </a>
+          -
+          <span title="problem revision">
+           24
+          </span>
+         </td>
+         <td>
+          GNU C
+         </td>
+         <td>
+          <span class="verdict-accepted">
+           Accepted
+          </span>
+         </td>
+         <td>
+          31 ms
+         </td>
+         <td>
+          3256 KB
+         </td>
+         <td>
+          2018-05-13 18:55:10
+         </td>
+         <td>
+          2018-05-14 03:46:08
+         </td>
+         <td>
+          <button class="showDiff" style="padding: 0.05em; width: 80px;" title="Compare">
+           Compare
+          </button>
+         </td>
+        </tr>
+       </table>
+      </div>
+     </div>
+     <script type="text/javascript">
+      $(document).ready(function () {
+                // Create new ':containsIgnoreCase' selector for search
+                jQuery.expr[':'].containsIgnoreCase = function(a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+                if (window.updateDatatableFilter == undefined) {
+                    window.updateDatatableFilter = function(i) {
+                        var parent = $(i).parent().parent().parent().parent();
+                        $("tr.no-items", parent).remove();
+                        $("tr", parent).hide().removeClass('visible');
+                        var text = $(i).val();
+                        if (text) {
+                            $("tr" + ":containsIgnoreCase('" + text + "')", parent).show().addClass('visible');
+                        } else {
+                            parent.find(".rowCount").text("");
+                            $("tr", parent).show().addClass('visible');
+                        }
+
+                        var found = false;
+                        var visibleRowCount = 0;
+                        $("tr", parent).each(function () {
+                            if (!found) {
+                                if ($(this).find("th").size() > 0) {
+                                    $(this).show().addClass('visible');
+                                    found = true;
+                                }
+                            }
+                            if ($(this).hasClass('visible')) {
+                                visibleRowCount++;
+                            }
+                        });
+                        if (text) {
+                            parent.find(".rowCount").text("Matches: " + (visibleRowCount - (found ? 1 : 0)));
+                        }
+                        if (visibleRowCount == (found ? 1 : 0)) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo($(parent).find('table'));
+                        }
+                        $(parent).find("tr td").removeClass("dark");
+                        $(parent).find("tr.visible:odd td").addClass("dark");
+                    }
+
+                    $(".datatable .closed").click(function () {
+                        var parent = $(this).parent();
+                        $(this).hide();
+                        $(".filter", parent).fadeIn(function () {
+                            $("input", parent).val("").focus().css("border", "1px solid #aaa");
+                        });
+                    });
+
+                    $(".datatable .opened").click(function () {
+                        var parent = $(this).parent().parent();
+                        $(".filter", parent).fadeOut(function () {
+                            $(".closed", parent).show();
+                            $("input", parent).val("").each(function () {
+                                window.updateDatatableFilter(this);
+                            });
+                        });
+                    });
+
+                    $(".datatable .filter input").keyup(function(e) {
+                        window.updateDatatableFilter(this);
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+
+                    $(".datatable table").each(function () {
+                        var found = false;
+                        $("tr", this).each(function () {
+                            if (!found && $(this).find("th").size() == 0) {
+                                found = true;
+                            }
+                        });
+                        if (!found) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo(this);
+                        }
+                    });
+
+                    // Applies styles to datatables.
+                    $(".datatable").each(function () {
+                        $(this).find("tr:first th").addClass("top");
+                        $(this).find("tr:last td").addClass("bottom");
+                        $(this).find("tr:odd td").addClass("dark");
+                        $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                        $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                    });
+
+                    $(".datatable table.tablesorter").each(function () {
+                        $(this).bind("sortEnd", function () {
+                            $(".datatable").each(function () {
+                                $(this).find("th, td")
+                                    .removeClass("top").removeClass("bottom")
+                                    .removeClass("left").removeClass("right")
+                                    .removeClass("dark");
+                                $(this).find("tr:first th").addClass("top");
+                                $(this).find("tr:last td").addClass("bottom");
+                                $(this).find("tr:odd td").addClass("dark");
+                                $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                                $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                            });
+                        });
+                    });
+                }
+        });
+     </script>
+     <div class="roundbox " style="margin-top:2em;font-size:1.1rem;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       → Source
+       <div class="top-links">
+       </div>
+      </div>
+      <pre class="prettyprint lang-c program-source" id="program-source-text" style="padding: 0.5em;">#include &lt;stdio.h&gt; 
+#include &lt;stdlib.h&gt;
+struct ex {int s; int d; int c; int n;};
+int cm (const void *A, const void *B){
+	return	((struct ex *)A)-&gt;d - ((struct ex *)B)-&gt;d;
+	}
+int main (){
+int i, j, n, m;
+int const MAX = 100;
+int ans[100] = {0};
+struct ex a[MAX];
+
+scanf("%d %d",&amp;n, &amp;m);
+for (i=0;i &lt; m;i++){
+	scanf("%d %d %d", &amp;a[i].s, &amp;a[i].d, &amp;a[i].c);
+	a[i].n = i + 1;
+	ans[a[i].d - 1] = m + 1;
+	}
+
+qsort(a,m,sizeof a[0], cm);
+j = 0;
+for (i=0;i&lt;n;i++){
+	if(ans[i] == m + 1){
+		j++;
+		continue;
+		}
+	int k;
+	for(k = j; k &lt; m ; k++){
+		if (a[k].s &lt;= i + 1 &amp;&amp; a[k].c &gt; 0 ){
+			ans[i] = a[k].n;
+			a[k].c--;
+			break;
+			}
+		}
+	
+	}
+//check
+j = 0;
+for (i=0;i&lt;m;i++)
+	j += a[i].c;
+
+if (j &gt; 0)
+//if(0)
+	printf("-1");
+else
+	for (i = 0; i&lt;n; i++)
+		printf("%i ",ans[i]);
+printf("\n");
+return 0;
+}
+</pre>
+     </divt
+     <script type="text/javascript">
+      $(function () {
+            String.prototype.replaceAll = function (search, replace) {
+                return this.split(search).join(replace);
+            };
+
+            $(".prettyprint.program-source").each(function() {
+                var preId = "program-source-text";
+                var cpyId = ("id" + Math.random()).replaceAll(".", "0");
+
+                var $copy = $("<div title='Copy' data-clipboard-target='#" + preId + "' id='" + cpyId + "' class='source-copier'>Copy</div>");
+                $(this).parent().find(".caption").append($copy);
+
+                var clipboard = new Clipboard('#' + cpyId, {
+                    text: function(trigger) {
+                        return document.querySelector('#' + preId).innerText;
+                    }
+                });
+
+                clipboard.on('success', function(e) {
+                    Codeforces.showMessage("The source code has been copied into the clipboard");
+                    e.clearSelection();
+                });
+            });
+        });
+     </script>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       1
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3216 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>5 2
+1 3 1
+1 5 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 2 3 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 2 3 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=5, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       2
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3228 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>3 2
+1 3 1
+1 2 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=3, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       3
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>10 3
+4 7 2
+1 10 3
+8 9 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>2 2 2 1 1 0 4 3 4 4 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>2 2 2 1 1 0 4 3 4 4 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=10, m=3]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       4
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>2 1
+1 2 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 2 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 2 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=2, m=1]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       5
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 30 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>3 1
+1 2 2
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=3, m=1]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       6
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 31 ms,
+       <strong>
+        memory
+       </strong>
+       : 3232 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>3 1
+1 3 2
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 1 2 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 1 2 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=3, m=1]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       7
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 30 ms,
+       <strong>
+        memory
+       </strong>
+       : 3228 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 1
+1 100 99
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=1]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       8
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 1
+1 100 100
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=100, m=1]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       9
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3212 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 1
+1 100 98
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 2 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 2 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=1]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       10
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 30 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 2
+1 100 49
+1 99 49
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       11
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>10 2
+3 7 4
+6 10 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 1 1 1 1 3 2 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 1 1 1 1 3 2 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=10, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       12
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3248 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>10 4
+2 5 1
+1 4 2
+4 7 1
+7 10 2
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>2 2 1 5 5 3 5 4 4 5 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>2 2 1 5 5 3 5 4 4 5 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=10, m=4]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       13
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>20 5
+6 16 3
+4 14 4
+3 13 1
+1 11 1
+10 20 4
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>4 0 3 2 2 2 2 1 1 1 6 5 6 6 5 6 5 5 0 6 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>4 0 3 2 2 2 2 1 1 1 6 5 6 6 5 6 5 5 0 6 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=20, m=5]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       14
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>30 7
+1 4 1
+22 25 1
+25 28 2
+9 12 1
+13 16 1
+11 14 1
+14 17 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 0 0 8 0 0 0 0 4 0 6 8 5 8 7 8 8 0 0 0 0 2 0 0 8 3 3 8 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 0 0 8 0 0 0 0 4 0 6 8 5 8 7 8 8 0 0 0 0 2 0 0 8 3 3 8 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=30, m=7]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       15
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>50 14
+42 44 2
+38 40 1
+6 8 2
+37 39 1
+33 35 1
+17 19 2
+12 14 2
+2 4 1
+9 11 2
+1 3 1
+32 34 1
+24 26 1
+44 46 1
+48 50 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>10 8 15 15 0 3 3 15 9 9 15 7 7 15 0 0 6 6 15 0 0 0 0 12 0 15 0 0 0 0 0 11 5 15 15 0 4 2 15 15 0 1 1 15 13 15 0 14 0 15 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>10 8 15 15 0 3 3 15 9 9 15 7 7 15 0 0 6 6 15 0 0 0 0 12 0 15 0 0 0 0 0 11 5 15 15 0 4 2 15 15 0 1 1 15 13 15 0 14 0 15 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=50, m=14]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       16
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>50 7
+45 50 4
+26 31 5
+35 40 3
+38 43 1
+39 44 3
+3 8 2
+1 6 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>7 0 6 6 0 8 0 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 8 0 0 0 3 3 3 4 5 8 5 5 8 8 1 1 1 1 0 8 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>7 0 6 6 0 8 0 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 8 0 0 0 3 3 3 4 5 8 5 5 8 8 1 1 1 1 0 8 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=50, m=7]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       17
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>50 15
+41 46 5
+35 40 5
+27 32 3
+10 15 2
+1 6 3
+20 25 1
+11 16 1
+9 14 1
+13 18 2
+18 23 3
+2 7 2
+25 30 1
+29 34 1
+43 48 1
+45 50 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>5 5 5 11 11 16 16 0 8 4 4 7 9 16 16 16 9 16 10 10 10 6 16 0 16 12 3 3 3 16 13 16 0 16 2 2 2 2 2 16 1 1 1 1 1 16 14 16 15 16 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>5 5 5 11 11 16 16 0 8 4 4 7 9 16 16 16 9 16 10 10 10 6 16 0 16 12 3 3 3 16 13 16 0 16 2 2 2 2 2 16 1 1 1 1 1 16 14 16 15 16 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=50, m=15]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       18
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>90 30
+1 5 1
+57 61 3
+13 17 1
+60 64 1
+73 77 2
+5 9 2
+16 20 3
+29 33 4
+83 87 3
+63 67 2
+35 39 4
+18 22 1
+42 46 4
+46 50 2
+48 52 2
+23 27 1
+82 86 1
+77 81 3
+67 71 2
+22 26 2
+37 41 1
+6 10 1
+50 54 1
+8 12 1
+86 90 1
+68 72 1
+11 15 1
+72 76 1
+62 66 1
+52 56 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 0 0 0 31 6 6 22 31 31 24 31 27 3 31 7 31 7 7 31 12 31 20 20 16 31 31 0 8 8 8 8 31 0 11 11 11 11 31 21 31 13 13 13 13 31 14 14 15 31 15 31 23 31 30 31 2 2 2 4 31 29 10 31 10 31 31 19 19 26 31 31 28 5 5 31 31 18 18 18 31 17 9 9 9 31 31 25 0 31 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 0 0 0 31 6 6 22 31 31 24 31 27 3 31 7 31 7 7 31 12 31 20 20 16 31 31 0 8 8 8 8 31 0 11 11 11 11 31 21 31 13 13 13 13 31 14 14 15 31 15 31 23 31 30 31 2 2 2 4 31 29 10 31 10 31 31 19 19 26 31 31 28 5 5 31 31 18 18 18 31 17 9 9 9 31 31 25 0 31 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=90, m=30]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       19
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3248 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 38
+41 43 1
+53 55 2
+91 93 2
+47 49 2
+77 79 2
+5 7 2
+2 4 2
+28 30 1
+79 81 1
+42 44 1
+27 29 1
+95 97 2
+58 60 1
+57 59 1
+61 63 2
+33 35 2
+22 24 1
+44 46 1
+10 12 2
+13 15 1
+97 99 1
+37 39 2
+18 20 1
+50 52 2
+21 23 1
+68 70 2
+83 85 1
+71 73 2
+65 67 1
+64 66 1
+15 17 1
+7 9 1
+88 90 2
+30 32 1
+74 76 1
+24 26 1
+85 87 1
+82 84 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 7 7 39 6 6 39 32 39 19 19 39 20 0 39 31 39 23 0 39 25 17 39 39 36 39 11 8 39 39 34 39 16 16 39 0 22 22 39 0 1 10 39 39 18 39 4 4 39 24 24 39 2 2 39 0 14 13 39 39 15 15 39 30 29 39 39 26 26 39 28 28 39 35 0 39 5 5 39 9 39 38 27 39 39 37 39 33 33 39 3 3 39 0 12 12 39 21 39 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 7 7 39 6 6 39 32 39 19 19 39 20 0 39 31 39 23 0 39 25 17 39 39 36 39 11 8 39 39 34 39 16 16 39 0 22 22 39 0 1 10 39 39 18 39 4 4 39 24 24 39 2 2 39 0 14 13 39 39 15 15 39 30 29 39 39 26 26 39 28 28 39 35 0 39 5 5 39 9 39 38 27 39 39 37 39 33 33 39 3 3 39 0 12 12 39 21 39 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=38]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       20
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 43
+76 77 1
+24 25 1
+2 3 1
+85 86 1
+49 50 1
+15 16 1
+30 31 1
+78 79 1
+54 55 1
+58 59 1
+17 18 1
+67 68 1
+21 22 1
+80 81 1
+35 36 1
+8 9 1
+83 84 1
+44 45 1
+62 63 1
+64 65 1
+72 73 1
+27 28 1
+56 57 1
+12 13 1
+40 41 1
+32 33 1
+52 53 1
+70 71 1
+97 98 1
+37 38 1
+87 88 1
+46 47 1
+89 90 1
+4 5 1
+94 95 1
+60 61 1
+99 100 1
+10 11 1
+74 75 1
+6 7 1
+91 92 1
+19 20 1
+42 43 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 3 44 34 44 40 44 16 44 38 44 24 44 0 6 44 11 44 42 44 13 44 0 2 44 0 22 44 0 7 44 26 44 0 15 44 30 44 0 25 44 43 44 18 44 32 44 0 5 44 0 27 44 9 44 23 44 10 44 36 44 19 44 20 44 0 12 44 0 28 44 21 44 39 44 1 44 8 44 14 44 0 17 44 4 44 31 44 33 44 41 44 0 35 44 0 29 44 37 44 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 3 44 34 44 40 44 16 44 38 44 24 44 0 6 44 11 44 42 44 13 44 0 2 44 0 22 44 0 7 44 26 44 0 15 44 30 44 0 25 44 43 44 18 44 32 44 0 5 44 0 27 44 9 44 23 44 10 44 36 44 19 44 20 44 0 12 44 0 28 44 21 44 39 44 1 44 8 44 14 44 0 17 44 4 44 31 44 33 44 41 44 0 35 44 0 29 44 37 44 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=43]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       21
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 35
+52 55 1
+55 58 1
+69 72 1
+32 35 1
+9 12 3
+68 71 1
+78 81 3
+51 54 1
+56 59 1
+63 66 3
+4 7 2
+12 15 2
+74 77 1
+87 90 3
+72 75 1
+93 96 2
+39 42 2
+15 18 1
+92 95 1
+23 26 3
+83 86 2
+28 31 2
+58 61 1
+47 50 1
+46 49 2
+31 34 1
+82 85 1
+96 99 2
+38 41 1
+41 44 1
+5 8 1
+34 37 1
+19 22 3
+27 30 1
+67 70 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 0 11 11 31 36 36 5 5 5 36 12 12 36 18 0 36 33 33 33 36 20 20 20 36 34 22 22 36 36 26 4 36 36 32 36 29 17 17 36 36 30 36 0 25 25 24 36 36 8 1 0 36 36 2 9 36 36 23 36 0 10 10 10 36 35 6 3 36 36 36 15 13 36 0 36 7 7 7 36 27 21 21 36 36 14 14 14 36 0 19 16 16 36 36 28 28 36 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 0 11 11 31 36 36 5 5 5 36 12 12 36 18 0 36 33 33 33 36 20 20 20 36 34 22 22 36 36 26 4 36 36 32 36 29 17 17 36 36 30 36 0 25 25 24 36 36 8 1 0 36 36 2 9 36 36 23 36 0 10 10 10 36 35 6 3 36 36 36 15 13 36 0 36 7 7 7 36 27 21 21 36 36 14 14 14 36 0 19 16 16 36 36 28 28 36 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=35]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       22
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3232 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 4
+73 83 4
+79 89 8
+12 22 6
+23 33 9
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 3 3 3 3 3 3 0 0 0 0 5 4 4 4 4 4 4 4 4 4 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 2 2 2 2 5 2 2 2 2 0 5 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 3 3 3 3 3 3 0 0 0 0 5 4 4 4 4 4 4 4 4 4 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 2 2 2 2 5 2 2 2 2 0 5 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=4]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       23
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 2
+39 43 1
+82 86 3
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       24
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3228 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 36
+2 5 2
+35 38 1
+55 58 2
+40 43 3
+73 76 2
+30 33 3
+87 90 3
+93 96 1
+97 100 1
+42 45 1
+44 47 1
+66 69 3
+95 98 1
+12 15 3
+47 50 1
+72 75 1
+57 60 2
+1 4 1
+8 11 3
+15 18 1
+22 25 2
+76 79 2
+82 85 1
+91 94 2
+83 86 2
+33 36 1
+62 65 3
+26 29 3
+18 21 1
+36 39 1
+68 71 1
+50 53 1
+51 54 1
+4 7 1
+17 20 1
+78 81 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>18 1 1 37 37 34 37 19 19 19 37 14 14 14 37 20 35 37 29 37 37 21 21 0 37 28 28 28 37 6 6 6 37 26 2 37 30 37 37 4 4 4 37 10 37 11 37 15 0 37 32 33 37 37 3 3 17 37 17 37 0 27 27 27 37 12 12 12 37 31 37 16 5 5 37 37 22 22 37 36 37 23 25 25 37 37 7 7 7 37 24 24 8 37 13 37 9 37 0 37 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>18 1 1 37 37 34 37 19 19 19 37 14 14 14 37 20 35 37 29 37 37 21 21 0 37 28 28 28 37 6 6 6 37 26 2 37 30 37 37 4 4 4 37 10 37 11 37 15 0 37 32 33 37 37 3 3 17 37 17 37 0 27 27 27 37 12 12 12 37 31 37 16 5 5 37 37 22 22 37 36 37 23 25 25 37 37 7 7 7 37 24 24 8 37 13 37 9 37 0 37 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=36]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       25
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 37
+49 51 2
+79 81 2
+46 48 2
+71 73 2
+31 33 2
+42 44 1
+17 19 2
+64 66 2
+24 26 1
+8 10 2
+38 40 1
+1 3 2
+75 77 2
+52 54 2
+11 13 2
+87 89 1
+98 100 2
+60 62 1
+56 58 2
+39 41 1
+92 94 1
+13 15 1
+67 69 2
+4 6 2
+19 21 1
+91 93 1
+86 88 1
+43 45 1
+25 27 1
+94 96 1
+81 83 1
+35 37 1
+34 36 1
+61 63 1
+21 23 1
+83 85 1
+27 29 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>12 12 38 24 24 38 0 10 10 38 15 15 38 22 38 0 7 7 38 25 38 35 38 9 29 38 38 37 38 0 5 5 38 33 32 38 38 11 20 38 38 6 28 38 38 3 3 38 1 1 38 14 14 38 0 19 19 38 0 18 34 38 38 8 8 38 23 23 38 0 4 4 38 0 13 13 38 0 2 2 38 31 38 36 38 27 16 38 38 0 26 21 38 38 30 38 0 17 17 38 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>12 12 38 24 24 38 0 10 10 38 15 15 38 22 38 0 7 7 38 25 38 35 38 9 29 38 38 37 38 0 5 5 38 33 32 38 38 11 20 38 38 6 28 38 38 3 3 38 1 1 38 14 14 38 0 19 19 38 0 18 34 38 38 8 8 38 23 23 38 0 4 4 38 0 13 13 38 0 2 2 38 31 38 36 38 27 16 38 38 0 26 21 38 38 30 38 0 17 17 38 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=37]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       26
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3228 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>50 16
+42 44 2
+18 20 2
+10 12 1
+9 11 2
+25 27 1
+45 47 1
+12 14 1
+29 31 2
+4 6 1
+46 48 1
+32 34 2
+34 36 1
+48 50 1
+21 23 1
+15 17 2
+24 26 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=50, m=16]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       27
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3216 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>90 29
+1 5 1
+56 60 2
+31 35 4
+86 90 2
+25 29 4
+58 62 2
+73 77 2
+12 16 2
+65 69 1
+16 20 3
+42 46 4
+62 66 2
+2 6 2
+77 81 1
+80 84 1
+48 52 4
+81 85 2
+68 72 1
+57 61 1
+75 79 1
+35 39 2
+37 41 1
+18 22 1
+4 8 2
+67 71 1
+85 89 1
+20 24 1
+10 14 2
+51 55 2
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=90, m=29]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       28
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 6
+3 43 40
+46 86 24
+38 78 5
+51 91 8
+59 99 12
+60 100 2
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 7 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 4 4 4 4 4 7 4 4 4 5 5 5 5 7 5 5 5 5 7 5 5 5 5 6 6 0 7 7 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 7 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 4 4 4 4 4 7 4 4 4 5 5 5 5 7 5 5 5 5 7 5 5 5 5 6 6 0 7 7 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=6]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       29
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 30 ms,
+       <strong>
+        memory
+       </strong>
+       : 3216 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 36
+2 5 2
+35 38 1
+55 58 2
+40 43 3
+73 76 2
+30 33 3
+87 90 3
+93 96 1
+97 100 1
+42 45 1
+44 47 1
+66 69 3
+95 98 1
+12 15 3
+47 50 1
+72 75 1
+57 60 2
+1 4 1
+8 11 3
+15 18 1
+22 25 2
+76 79 2
+82 85 1
+91 94 2
+83 86 2
+33 36 1
+62 65 3
+26 29 3
+18 21 1
+36 39 1
+68 71 1
+50 53 2
+51 54 1
+4 7 1
+17 20 1
+78 81 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=100, m=36]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       30
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3232 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 37
+49 51 2
+79 81 2
+46 48 2
+71 73 2
+31 33 3
+42 44 1
+17 19 2
+64 66 2
+24 26 1
+8 10 2
+38 40 1
+1 3 2
+75 77 2
+52 54 2
+11 13 2
+87 89 1
+98 100 2
+60 62 1
+56 58 2
+39 41 1
+92 94 1
+13 15 1
+67 69 2
+4 6 2
+19 21 1
+91 93 1
+86 88 1
+43 45 1
+25 27 1
+94 96 1
+81 83 1
+35 37 1
+34 36 1
+61 63 1
+21 23 1
+83 85 1
+27 29 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=100, m=37]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       31
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3236 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>90 30
+1 5 1
+57 61 3
+13 17 1
+60 64 1
+73 77 2
+5 9 2
+16 20 3
+29 33 5
+83 87 3
+63 67 2
+35 39 4
+18 22 1
+42 46 4
+46 50 2
+48 52 2
+23 27 1
+82 86 1
+77 81 3
+67 71 2
+22 26 2
+37 41 1
+6 10 1
+50 54 1
+8 12 1
+86 90 1
+68 72 1
+11 15 1
+72 76 1
+62 66 1
+52 56 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=90, m=30]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       32
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 38
+41 43 1
+53 55 2
+91 93 2
+47 49 2
+77 79 2
+5 7 2
+2 4 2
+28 30 1
+79 81 1
+42 44 1
+27 29 1
+95 97 2
+58 60 1
+57 59 1
+61 63 2
+33 35 2
+22 24 1
+44 46 1
+10 12 2
+13 15 1
+97 99 1
+37 39 3
+18 20 1
+50 52 2
+21 23 1
+68 70 2
+83 85 1
+71 73 2
+65 67 1
+64 66 1
+15 17 1
+7 9 1
+88 90 2
+30 32 1
+74 76 1
+24 26 1
+85 87 1
+82 84 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=100, m=38]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       33
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 43
+76 77 1
+24 25 1
+2 3 1
+85 86 1
+49 50 1
+15 16 1
+30 31 1
+78 79 2
+54 55 1
+58 59 1
+17 18 1
+67 68 1
+21 22 1
+80 81 1
+35 36 1
+8 9 1
+83 84 1
+44 45 1
+62 63 1
+64 65 1
+72 73 1
+27 28 1
+56 57 1
+12 13 1
+40 41 1
+32 33 1
+52 53 1
+70 71 1
+97 98 1
+37 38 1
+87 88 1
+46 47 1
+89 90 1
+4 5 1
+94 95 1
+60 61 1
+99 100 1
+10 11 1
+74 75 1
+6 7 1
+91 92 1
+19 20 1
+42 43 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=100, m=43]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       34
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3236 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 35
+52 55 1
+55 58 1
+69 72 1
+32 35 1
+9 12 3
+68 71 1
+78 81 3
+51 54 1
+56 59 1
+63 66 3
+4 7 2
+12 15 2
+74 77 1
+87 90 3
+72 75 1
+93 96 2
+39 42 2
+15 18 1
+92 95 1
+23 26 4
+83 86 2
+28 31 2
+58 61 1
+47 50 1
+46 49 2
+31 34 1
+82 85 1
+96 99 2
+38 41 1
+41 44 1
+5 8 1
+34 37 1
+19 22 3
+27 30 1
+67 70 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=100, m=35]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       35
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>97 22
+10 17 6
+24 31 6
+79 86 7
+60 67 6
+42 49 5
+67 74 5
+34 41 4
+70 77 3
+51 58 5
+82 89 2
+89 96 5
+14 21 2
+40 47 1
+1 8 2
+23 30 1
+59 66 1
+50 57 2
+26 33 1
+15 22 2
+90 97 1
+32 39 1
+2 9 4
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>14 14 22 22 22 22 0 23 23 1 1 1 1 1 1 12 23 12 19 19 23 23 15 2 2 2 2 2 2 23 23 18 23 21 7 7 7 7 23 13 23 5 5 5 5 5 23 0 23 17 17 9 9 9 9 9 23 23 16 4 4 4 4 4 4 23 23 6 6 6 6 6 8 23 8 8 23 0 3 3 3 3 3 3 3 23 10 10 23 11 11 11 11 11 20 23 23 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>14 14 22 22 22 22 0 23 23 1 1 1 1 1 1 12 23 12 19 19 23 23 15 2 2 2 2 2 2 23 23 18 23 21 7 7 7 7 23 13 23 5 5 5 5 5 23 0 23 17 17 9 9 9 9 9 23 23 16 4 4 4 4 4 4 23 23 6 6 6 6 6 8 23 8 8 23 0 3 3 3 3 3 3 3 23 10 10 23 11 11 11 11 11 20 23 23 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=97, m=22]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       36
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>12 11
+1 2 1
+2 3 2
+3 4 3
+4 5 4
+5 6 5
+6 7 6
+7 8 7
+8 9 8
+9 10 9
+10 11 10
+11 12 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=12, m=11]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       37
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>6 2
+1 6 3
+1 2 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>2 3 1 1 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>2 3 1 1 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=6, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       38
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3256 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>88 1
+1 2 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=88, m=1]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       39
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 31 ms,
+       <strong>
+        memory
+       </strong>
+       : 3228 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>4 2
+1 4 1
+1 2 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>2 3 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>2 3 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=4, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       40
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3256 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 2
+1 100 30
+1 20 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       41
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>88 1
+1 3 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=88, m=1]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       42
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3236 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>6 2
+1 5 2
+2 3 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 2 3 1 3 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 2 3 1 3 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=6, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       43
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3224 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>7 2
+1 7 3
+2 3 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 2 3 1 1 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 2 3 1 1 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=7, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       44
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 31 ms,
+       <strong>
+        memory
+       </strong>
+       : 3256 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>8 2
+3 8 2
+4 5 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 1 2 3 1 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 1 2 3 1 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=8, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       45
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>10 2
+1 10 7
+2 3 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 2 3 1 1 1 1 1 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 2 3 1 1 1 1 1 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=10, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       46
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>5 2
+1 5 2
+2 3 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 2 3 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 2 3 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=5, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       47
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>10 2
+1 10 5
+2 3 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 2 3 1 1 1 1 0 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 2 3 1 1 1 1 0 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=10, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       48
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 30 ms,
+       <strong>
+        memory
+       </strong>
+       : 3232 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>10 2
+1 10 4
+2 4 2
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 2 2 3 1 1 1 0 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 2 2 3 1 1 1 0 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=10, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       49
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3232 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>10 2
+1 10 6
+3 7 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 1 2 1 1 1 3 1 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 1 2 1 1 1 3 1 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=10, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       50
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3236 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>10 3
+4 8 2
+1 10 3
+5 6 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>2 2 2 1 3 4 1 4 0 4 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>2 2 2 1 3 4 1 4 0 4 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=10, m=3]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       51
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>20 5
+4 14 4
+3 13 1
+1 11 1
+10 20 4
+6 16 3
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>3 0 2 1 1 1 1 5 5 5 6 4 6 6 4 6 4 4 0 6 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>3 0 2 1 1 1 1 5 5 5 6 4 6 6 4 6 4 4 0 6 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=20, m=5]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       52
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>73 2
+33 35 2
+12 63 44
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=73, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       53
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3228 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>86 5
+66 74 1
+29 33 3
+13 78 38
+20 34 2
+72 85 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 0 3 3 3 3 3 3 3 4 4 3 3 3 3 3 3 3 2 2 2 3 6 6 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 0 0 0 0 0 0 0 0 1 0 0 0 0 0 5 0 6 0 0 0 6 0 0 0 0 0 0 6 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 0 3 3 3 3 3 3 3 4 4 3 3 3 3 3 3 3 2 2 2 3 6 6 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 0 0 0 0 0 0 0 0 1 0 0 0 0 0 5 0 6 0 0 0 6 0 0 0 0 0 0 6 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=86, m=5]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       54
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3248 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>9 4
+3 7 1
+6 9 1
+2 3 1
+1 8 2
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>4 3 5 1 4 2 5 5 5 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>4 3 5 1 4 2 5 5 5 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=9, m=4]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       55
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3236 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>10 2
+1 10 5
+2 4 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 2 1 3 1 1 1 0 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 2 1 3 1 1 1 0 0 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=10, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       56
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3228 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>10 4
+1 10 2
+1 4 2
+2 5 1
+7 8 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>2 2 3 5 5 1 4 5 1 5 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>2 2 3 5 5 1 4 5 1 5 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=10, m=4]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       57
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>10 2
+1 10 7
+3 7 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 1 2 1 1 1 3 1 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 1 2 1 1 1 3 1 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=10, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       58
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>96 37
+9 43 23
+60 66 4
+7 15 1
+3 86 4
+30 65 14
+36 38 1
+28 36 8
+68 80 4
+7 22 5
+17 68 1
+7 18 1
+12 47 2
+4 6 2
+5 11 3
+41 55 10
+7 45 22
+6 67 16
+12 50 18
+64 70 2
+21 48 26
+2 17 6
+14 44 10
+63 84 18
+14 19 5
+34 92 56
+51 56 2
+13 20 5
+62 74 2
+1 3 1
+6 46 17
+58 62 4
+10 27 16
+13 37 16
+21 23 1
+48 69 13
+67 82 13
+17 51 18
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=96, m=37]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       59
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3232 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>31 3
+2 3 1
+1 12 4
+13 15 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>2 1 4 2 2 2 0 0 0 0 0 4 3 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>2 1 4 2 2 2 0 0 0 0 0 4 3 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=31, m=3]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       60
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3212 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>7 2
+2 6 4
+3 4 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=7, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       61
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3228 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>20 2
+3 4 1
+2 7 3
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 2 1 3 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 2 1 3 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=20, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       62
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 5
+15 53 23
+16 85 32
+59 93 3
+54 57 1
+13 40 11
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 6 1 1 1 1 1 1 1 2 2 2 2 2 6 4 2 2 6 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 6 3 0 0 0 0 0 0 6 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 6 1 1 1 1 1 1 1 2 2 2 2 2 6 4 2 2 6 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 6 3 0 0 0 0 0 0 6 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=5]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       63
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 5
+24 57 8
+28 72 15
+20 75 49
+27 67 7
+68 100 21
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=100, m=5]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       64
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>11 2
+1 11 5
+4 8 4
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 1 1 2 2 2 2 3 1 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 1 1 2 2 2 2 3 1 1 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=11, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       65
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3232 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>29 5
+5 10 3
+15 22 2
+18 27 4
+16 20 4
+7 11 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 1 1 1 5 0 6 6 0 0 0 2 4 4 4 4 6 2 6 3 3 3 3 6 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 1 1 1 5 0 6 6 0 0 0 2 4 4 4 4 6 2 6 3 3 3 3 6 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=29, m=5]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       66
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3232 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>28 4
+4 23 11
+11 12 1
+2 4 1
+16 24 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 3 0 5 1 1 1 1 1 1 2 5 1 1 1 1 1 4 0 0 0 0 5 5 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 3 0 5 1 1 1 1 1 1 2 5 1 1 1 1 1 4 0 0 0 0 5 5 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=28, m=4]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       67
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3216 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>90 8
+7 10 2
+27 28 1
+18 20 2
+12 48 2
+37 84 27
+29 32 2
+37 73 16
+3 40 14
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 8 8 8 8 1 1 8 9 8 8 8 8 8 8 8 3 3 9 8 8 4 4 0 0 2 9 6 6 0 9 0 0 0 0 7 7 7 9 7 7 7 7 7 7 7 9 7 7 7 7 7 7 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 9 5 5 5 5 5 5 5 5 5 0 9 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 8 8 8 8 1 1 8 9 8 8 8 8 8 8 8 3 3 9 8 8 4 4 0 0 2 9 6 6 0 9 0 0 0 0 7 7 7 9 7 7 7 7 7 7 7 9 7 7 7 7 7 7 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 9 5 5 5 5 5 5 5 5 5 0 9 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=90, m=8]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       68
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3244 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>61 2
+12 41 24
+20 29 2
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 1 1 3 1 1 1 1 1 1 1 1 1 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 1 1 3 1 1 1 1 1 1 1 1 1 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=61, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       69
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3248 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>27 8
+7 22 2
+3 5 1
+24 26 1
+1 14 1
+4 23 8
+10 12 1
+16 18 1
+5 6 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=27, m=8]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       70
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3252 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>88 8
+1 5 2
+29 50 7
+36 42 6
+72 81 2
+12 19 4
+65 73 2
+15 80 29
+4 43 16
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>1 1 0 8 9 8 8 8 8 8 8 5 5 5 5 8 8 8 9 8 8 8 8 8 8 7 7 7 2 2 2 2 2 2 2 3 3 3 3 3 3 9 9 7 7 7 7 7 7 9 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 6 7 7 7 7 7 7 9 4 4 0 0 0 0 9 9 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>1 1 0 8 9 8 8 8 8 8 8 5 5 5 5 8 8 8 9 8 8 8 8 8 8 7 7 7 2 2 2 2 2 2 2 3 3 3 3 3 3 9 9 7 7 7 7 7 7 9 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 6 7 7 7 7 7 7 9 4 4 0 0 0 0 9 9 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=88, m=8]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       71
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3228 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>34 17
+1 2 1
+6 12 4
+22 23 1
+5 6 1
+8 30 9
+2 7 2
+22 26 3
+3 34 31
+1 19 9
+4 11 7
+2 5 1
+4 9 3
+8 14 4
+2 22 14
+3 8 5
+32 33 1
+18 31 10
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>-1
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok No solution [n=34, m=17]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       72
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3232 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>9 2
+3 7 2
+1 9 5
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>2 2 1 1 2 2 3 2 3 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>2 2 1 1 2 2 3 2 3 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=9, m=2]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       73
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3248 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>85 6
+4 63 17
+1 47 2
+25 26 1
+1 8 1
+24 78 44
+39 79 4
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>4 2 2 1 1 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 5 3 7 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 7 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 7 5 5 5 5 5 5 5 5 6 6 6 6 0 0 7 7 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>4 2 2 1 1 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 5 3 7 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 7 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 7 5 5 5 5 5 5 5 5 6 6 6 6 0 0 7 7 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=85, m=6]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       74
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3228 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>85 5
+3 44 9
+77 85 7
+3 27 8
+5 42 4
+4 7 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 3 5 3 3 6 3 3 3 3 3 4 4 4 4 1 1 1 1 1 1 1 1 1 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 0 6 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 3 5 3 3 6 3 3 3 3 3 4 4 4 4 1 1 1 1 1 1 1 1 1 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 0 6 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=85, m=5]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       75
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 15 ms,
+       <strong>
+        memory
+       </strong>
+       : 3228 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>50 5
+7 23 7
+4 12 4
+7 46 14
+15 32 8
+16 24 2
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>0 0 0 2 2 2 2 1 1 1 1 6 1 1 1 5 5 4 4 4 4 4 6 6 4 4 4 3 3 3 3 6 3 3 3 3 3 3 3 3 3 3 0 0 0 6 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>0 0 0 2 2 2 2 1 1 1 1 6 1 1 1 5 5 4 4 4 4 4 6 6 4 4 4 3 3 3 3 6 3 3 3 3 3 3 3 3 3 3 0 0 0 6 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=50, m=5]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       76
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3248 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>6 3
+1 5 1
+1 6 1
+1 2 1
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>3 4 1 2 4 4 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>3 4 1 2 4 4 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=6, m=3]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="roundbox " style="margin-top:2em;font-size:0.8em;">
+      <div class="roundbox-lt">
+      </div>
+      <div class="roundbox-rt">
+      </div>
+      <div class="caption titled">
+       77
+       <div class="top-links">
+       </div>
+      </div>
+      <div class="infoline">
+       <strong>
+        Time
+       </strong>
+       : 0 ms,
+       <strong>
+        memory
+       </strong>
+       : 3240 KB
+      </div>
+      <div class="infoline">
+       <div class="welldone">
+        Verdict: OK
+       </div>
+      </div>
+      <div class="file input-view">
+       <div class="name">
+        Input
+       </div>
+       <div class="text">
+        <pre>100 3
+17 21 3
+1 66 38
+8 22 2
+</pre>
+       </div>
+      </div>
+      <div class="file output-view">
+       <div class="name">
+        Participant's output
+       </div>
+       <div class="text">
+        <pre>2 2 2 2 2 2 2 3 3 2 2 2 2 2 2 2 1 1 1 2 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file answer-view">
+       <div class="name">
+        Jury's answer
+       </div>
+       <div class="text">
+        <pre>2 2 2 2 2 2 2 3 3 2 2 2 2 2 2 2 1 1 1 2 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+</pre>
+       </div>
+      </div>
+      <div class="file checker-comment-view">
+       <div class="name">
+        Checker comment
+       </div>
+       <div class="text">
+        <pre>ok Solution exists [n=100, m=3]
+</pre>
+       </div>
+      </div>
+     </div>
+     <div class="submissions-diff-popup" style="display:none;width:900px;height:500px;overflow:auto;padding:1em;margin:1em;font-size:1.2rem;">
+      <div>
+       <form action="#" class="getDiffForm" method="post">
+        <input name="csrf_token" type="hidden" value="20664a101c66a97ca28bde13b76e1ac3"/>
+        <table>
+         <tbody>
+          <tr>
+           <td style="padding-right: 1em !important;">
+            <label for="previousSubmissionId">
+             Previous Submission:
+            </label>
+            <input name="previousSubmissionId" type="text" value="38195694"/>
+            <div class="shiftUp error__previousSubmissionId">
+             <span class="error for__previousSubmissionId " style="display: none;">
+             </span>
+             <span class="notice for__previousSubmissionId ">
+             </span>
+            </div>
+           </td>
+           <td style="padding-right: 1em !important;">
+            <label for="previousSubmissionId">
+             Current Submission:
+            </label>
+            <input name="currentSubmissionId" type="text" value="38195821"/>
+            <div class="shiftUp error__currentSubmissionId">
+             <span class="error for__currentSubmissionId " style="display: none;">
+             </span>
+             <span class="notice for__currentSubmissionId ">
+             </span>
+            </div>
+           </td>
+           <td>
+            <input type="submit" value="Compare"/>
+            <img alt="waiting..." class="waitingIndicator" src="http://st.codeforces.com/s/74817/images/indicator.gif" style="display: none"/>
+            <div class="shiftUp error__diffFormSubmit">
+             <span class="error for__diffFormSubmit " style="display: none;">
+             </span>
+             <span class="notice for__diffFormSubmit ">
+             </span>
+            </div>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </form>
+       <div class="diffHtmlTarget">
+       </div>
+      </div>
+      <script type="text/javascript">
+       Codeforces.getDiffFormSubmitListener = function (event) {
+        Codeforces.clearAjaxFormErrors();
+        var waitingIndicator = $(this).find(".waitingIndicator");
+        waitingIndicator.show();
+
+        var previousSubmissionId = $(this).find("input[name='previousSubmissionId']").val();
+        var currentSubmissionId = $(this).find("input[name='currentSubmissionId']").val();
+        var targetDiv = $(this).next();
+        $.post("/data/submissionsDiff",
+            {action: "getDiff", previousSubmissionId: previousSubmissionId, currentSubmissionId: currentSubmissionId},
+            function (response) {
+                waitingIndicator.hide();
+                targetDiv.html("");
+
+                if (response["success"] == "true") {
+                    targetDiv.html("<pre class=\"prettyprint\">" + response["diffHtml"] + "</pre>");
+                    prettyPrint();
+                } else {
+                    Codeforces.setAjaxFormErrors(".getDiffForm", response);
+                }
+            },
+            "json"
+        );
+        return false;
+    };
+      </script>
+     </div>
+     <div class="add-submission-to-problem-solutions-box" style="display: none; width: 500px">
+      <form method="POST">
+       <input name="csrf_token" type="hidden" value="20664a101c66a97ca28bde13b76e1ac3"/>
+       <h5>
+        Add solution to problem
+       </h5>
+       <hr/>
+       <table class="table-form">
+        <body>
+         <tr>
+          <td class="field-name">
+           Filename:
+          </td>
+          <td>
+           <input class="filename-field" style="width: 300px;box-sizing: border-box;" type="text" value="session_vladislav_k.c"/>
+          </td>
+         </tr>
+         <tr>
+          <td class="field-name">
+           Solution tag:
+          </td>
+          <td>
+           <select class="solutionTag-field" style="width: 300px">
+            <option>
+             ACCEPTED
+            </option>
+            <option>
+             REJECTED
+            </option>
+            <option>
+             TIME_LIMIT_EXCEEDED
+            </option>
+            <option>
+             WRONG_ANSWER
+            </option>
+            <option>
+             PRESENTATION_ERROR
+            </option>
+            <option>
+             MEMORY_LIMIT_EXCEEDED
+            </option>
+            <option>
+             FAILED
+            </option>
+           </select>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2" style="text-align: center;">
+           <input class="submit" type="submit" value="Add"/>
+          </td>
+         </tr>
+        </body>
+       </table>
+      </form>
+     </div>
+     <script type="text/javascript">
+      $(function () {
+        $("button.showDiff").click(function () {
+            Codeforces.facebox(".submissions-diff-popup", "http://st.codeforces.com/s/74817");
+            var getDiffForms = $(".getDiffForm");
+            getDiffForms.submit(Codeforces.getDiffFormSubmitListener);
+            getDiffForms.submit();
+        });
+
+        $("button.challengeButton").click(function () {
+            Codeforces.redirect($(this).attr("data-href"));
+        });
+
+        $("form.add-submission-to-problem-solutions").submit(function () {
+            var a = $(this);
+            Codeforces.facebox(".add-submission-to-problem-solutions-box", "http://st.codeforces.com/s/74817");
+            $(".add-submission-to-problem-solutions-box form").submit(function() {
+                var filenameField = $(this).find(".filename-field");
+                var filename = filenameField.val();
+                var solutionTag = $(this).find(".solutionTag-field").val();
+                $.post("/data/submissionAddToProblemSolutions", {
+                        action: "addToProblemSolutions", submissionId: 38195821, filename: filename, solutionTag: solutionTag}, function(json) {
+                    if (json.success == "true") {
+                        window.alert("The solution has been added!");
+                        Codeforces.reload();
+                    } else {
+                        window.alert("Can't add solution: " + json.error);
+                    }
+                }, "json");
+                return false;
+            });
+            return false;
+        });
+    });
+     </script>
+    </div>
+   </div>
+   <br style="clear: both;"/>
+   <div id="footer">
+    <div>
+     <a href="http://codeforces.com/">
+      Codeforces
+     </a>
+     (c) Copyright 2010-2018 Mike Mirzayanov
+    </div>
+    <div>
+     The only programming contests Web 2.0 platform
+    </div>
+    <div>
+     Server time:
+     <span class="format-timewithseconds" data-locale="en">
+      May/21/2018 00:00:24
+     </span>
+     (d2).
+    </div>
+    <div>
+     Desktop version, switch to
+     <a class="switchToMobile" href="?mobile=true" rel="nofollow">
+      mobile version
+     </a>
+     .
+    </div>
+    <div class="smaller">
+     <a href="/privacy">
+      Privacy Policy
+     </a>
+    </div>
+   </div>
+   <script type="text/javascript">
+    $(function() {
+                $(".switchToMobile").click(function() {
+                    Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", "true"));
+                    return false;
+                });
+                $(".switchToDesktop").click(function() {
+                    Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", "false"));
+                    return false;
+                });
+            });
+   </script>
+   <script type="text/javascript">
+    $(document).ready(function () {
+            if ($(window).width() < 1600) {
+                $('.button-up').css('width', '30px').css('line-height', '30px').css('font-size', '20px');
+            }
+
+            if ($(window).width() >= 1200) {
+                $ (window).scroll (function () {
+                    if ($ (this).scrollTop () > 100) {
+                        $ ('.button-up').fadeIn();
+                    } else {
+                        $ ('.button-up').fadeOut();
+                    }
+                });
+
+                $('.button-up').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 500);
+                    return false;
+                });
+
+                $('.button-up').hover(function () {
+                    $(this).animate({
+                        'opacity':'1'
+                    }).css({'background-color':'#e7ebf0','color':'#6a86a4'});
+                }, function () {
+                    $(this).animate({
+                        'opacity':'0.7'
+                    }).css({'background':'none','color':'#d3dbe4'});;
+                });
+            }
+            Codeforces.focusOnError();
+        });
+   </script>
+   <div class="userListsFacebox" style="display:none;">
+    <div style="padding: 0.5em; width: 600px; max-height: 200px; overflow-y: auto">
+     <div class="datatable" style="background-color: #E1E1E1; padding-bottom: 3px;">
+      <div class="lt">
+      </div>
+      <div class="rt">
+      </div>
+      <div class="lb">
+      </div>
+      <div class="rb">
+      </div>
+      <div style="padding: 4px 0 0 6px;font-size:1.4rem;position:relative;">
+       User lists
+       <div style="position:absolute;right:0.25em;top:0.35em;">
+        <span class="rowCount" style="padding:0;position:relative;bottom:2px;">
+        </span>
+        <img class="closed" src="http://st.codeforces.com/s/74817/images/icons/control.png">
+         <span class="filter" style="display:none;">
+          <img class="opened" src="http://st.codeforces.com/s/74817/images/icons/control-270.png"/>
+          <input style="padding:0;position:relative;bottom:2px;border:1px solid #aaa;height:17px;font-size:1.3rem;"/>
+         </span>
+        </img>
+       </div>
+      </div>
+      <div style="background-color: white;margin:0.3em 3px 0 3px;position:relative;">
+       <div class="ilt">
+       </div>
+       <div class="irt">
+       </div>
+       <table class="">
+        <thead>
+         <tr>
+          <th>
+           Name
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+        </tbody>
+       </table>
+      </div>
+     </div>
+     <script type="text/javascript">
+      $(document).ready(function () {
+                // Create new ':containsIgnoreCase' selector for search
+                jQuery.expr[':'].containsIgnoreCase = function(a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+                if (window.updateDatatableFilter == undefined) {
+                    window.updateDatatableFilter = function(i) {
+                        var parent = $(i).parent().parent().parent().parent();
+                        $("tr.no-items", parent).remove();
+                        $("tr", parent).hide().removeClass('visible');
+                        var text = $(i).val();
+                        if (text) {
+                            $("tr" + ":containsIgnoreCase('" + text + "')", parent).show().addClass('visible');
+                        } else {
+                            parent.find(".rowCount").text("");
+                            $("tr", parent).show().addClass('visible');
+                        }
+
+                        var found = false;
+                        var visibleRowCount = 0;
+                        $("tr", parent).each(function () {
+                            if (!found) {
+                                if ($(this).find("th").size() > 0) {
+                                    $(this).show().addClass('visible');
+                                    found = true;
+                                }
+                            }
+                            if ($(this).hasClass('visible')) {
+                                visibleRowCount++;
+                            }
+                        });
+                        if (text) {
+                            parent.find(".rowCount").text("Matches: " + (visibleRowCount - (found ? 1 : 0)));
+                        }
+                        if (visibleRowCount == (found ? 1 : 0)) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo($(parent).find('table'));
+                        }
+                        $(parent).find("tr td").removeClass("dark");
+                        $(parent).find("tr.visible:odd td").addClass("dark");
+                    }
+
+                    $(".datatable .closed").click(function () {
+                        var parent = $(this).parent();
+                        $(this).hide();
+                        $(".filter", parent).fadeIn(function () {
+                            $("input", parent).val("").focus().css("border", "1px solid #aaa");
+                        });
+                    });
+
+                    $(".datatable .opened").click(function () {
+                        var parent = $(this).parent().parent();
+                        $(".filter", parent).fadeOut(function () {
+                            $(".closed", parent).show();
+                            $("input", parent).val("").each(function () {
+                                window.updateDatatableFilter(this);
+                            });
+                        });
+                    });
+
+                    $(".datatable .filter input").keyup(function(e) {
+                        window.updateDatatableFilter(this);
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+
+                    $(".datatable table").each(function () {
+                        var found = false;
+                        $("tr", this).each(function () {
+                            if (!found && $(this).find("th").size() == 0) {
+                                found = true;
+                            }
+                        });
+                        if (!found) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo(this);
+                        }
+                    });
+
+                    // Applies styles to datatables.
+                    $(".datatable").each(function () {
+                        $(this).find("tr:first th").addClass("top");
+                        $(this).find("tr:last td").addClass("bottom");
+                        $(this).find("tr:odd td").addClass("dark");
+                        $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                        $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                    });
+
+                    $(".datatable table.tablesorter").each(function () {
+                        $(this).bind("sortEnd", function () {
+                            $(".datatable").each(function () {
+                                $(this).find("th, td")
+                                    .removeClass("top").removeClass("bottom")
+                                    .removeClass("left").removeClass("right")
+                                    .removeClass("dark");
+                                $(this).find("tr:first th").addClass("top");
+                                $(this).find("tr:last td").addClass("bottom");
+                                $(this).find("tr:odd td").addClass("dark");
+                                $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                                $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                            });
+                        });
+                    });
+                }
+        });
+     </script>
+    </div>
+   </div>
+   <script type="application/javascript">
+    $(function() {
+                $(".userListMarker").click(function() {
+                    $.post("/data/lists", {action: "findTouched"}, function(json) {
+                        Codeforces.facebox(".userListsFacebox");
+                        var tbody = $("#facebox tbody");
+                        tbody.empty();
+                        for (var i in json) {
+                            tbody.append(
+                                    $("<tr></tr>").append(
+                                            $("<td></td>").attr("data-readKey", json[i].readKey).text(json[i].name)
+                                    )
+                            );
+                        }
+                        Codeforces.updateDatatables();
+                        tbody.find("td").css("cursor", "pointer").click(function() {
+                            document.location = Codeforces.updateUrlParameter(document.location.href, "list", $(this).attr("data-readKey"));
+                        });
+                    }, "json");
+                });
+            });
+   </script>
+  </div>
+ </body>
+</html>
