@@ -1,3 +1,9 @@
+Following code forked and modified from shashank-sharma's codeforce scraper. 
+
+I added a new script called CodeForceDataConstuctor.py, which creates a data set from the code. By using the following command, python ./CodeForceDataConstuctor.py -crawl=no, the script will not use the scrapy to crawl for the problem set ids. By using the following command ./CodeForceDataConstuctor.py -crawl=yes, the script will use scrapy to crawl for the problems ids. 
+
+Note: Crawling for the problem set ids takes a long time so it is best to this only once!
+
 # codeforces-scraper
 Scrapy spider to scrape codeforces site and get all the successful submission for one particular language.
 Also to scrape top rated users for each particular language.
